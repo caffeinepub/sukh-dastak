@@ -6,32 +6,32 @@
   :root {
     --radius: 0.25rem;
 
-    /* Royal plum background */
-    --background: 0.18 0.075 340;
+    /* Deep peacock teal background */
+    --background: 0.15 0.07 200;
     --foreground: 0.93 0.025 85;
 
-    /* Card: slightly lighter plum */
-    --card: 0.22 0.085 340;
+    /* Card: slightly lighter peacock */
+    --card: 0.19 0.075 200;
     --card-foreground: 0.93 0.025 85;
 
     /* Popover */
-    --popover: 0.22 0.085 340;
+    --popover: 0.19 0.075 200;
     --popover-foreground: 0.93 0.025 85;
 
     /* Primary: antique gold */
     --primary: 0.72 0.12 75;
-    --primary-foreground: 0.18 0.075 340;
+    --primary-foreground: 0.15 0.07 200;
 
     /* Secondary: ivory */
     --secondary: 0.95 0.018 85;
-    --secondary-foreground: 0.18 0.075 340;
+    --secondary-foreground: 0.15 0.07 200;
 
     /* Muted */
-    --muted: 0.28 0.065 340;
+    --muted: 0.24 0.065 200;
     --muted-foreground: 0.72 0.04 75;
 
-    /* Accent: mauve-gold */
-    --accent: 0.35 0.07 340;
+    /* Accent: peacock-gold */
+    --accent: 0.28 0.07 200;
     --accent-foreground: 0.93 0.025 85;
 
     /* Destructive */
@@ -39,8 +39,8 @@
     --destructive-foreground: 0.985 0 0;
 
     /* Borders */
-    --border: 0.38 0.055 355;
-    --input: 0.32 0.065 340;
+    --border: 0.32 0.065 200;
+    --input: 0.26 0.065 200;
     --ring: 0.72 0.12 75;
 
     /* Charts */
@@ -51,13 +51,13 @@
     --chart-5: 0.769 0.188 70.08;
 
     /* Sidebar */
-    --sidebar: 0.18 0.075 340;
+    --sidebar: 0.15 0.07 200;
     --sidebar-foreground: 0.93 0.025 85;
     --sidebar-primary: 0.72 0.12 75;
-    --sidebar-primary-foreground: 0.18 0.075 340;
-    --sidebar-accent: 0.28 0.065 340;
+    --sidebar-primary-foreground: 0.15 0.07 200;
+    --sidebar-accent: 0.24 0.065 200;
     --sidebar-accent-foreground: 0.93 0.025 85;
-    --sidebar-border: 0.38 0.055 355;
+    --sidebar-border: 0.32 0.065 200;
     --sidebar-ring: 0.72 0.12 75;
   }
 
