@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.25rem;
+
+    /* Royal plum background */
+    --background: 0.18 0.075 340;
+    --foreground: 0.93 0.025 85;
+
+    /* Card: slightly lighter plum */
+    --card: 0.22 0.085 340;
+    --card-foreground: 0.93 0.025 85;
+
+    /* Popover */
+    --popover: 0.22 0.085 340;
+    --popover-foreground: 0.93 0.025 85;
+
+    /* Primary: antique gold */
+    --primary: 0.72 0.12 75;
+    --primary-foreground: 0.18 0.075 340;
+
+    /* Secondary: ivory */
+    --secondary: 0.95 0.018 85;
+    --secondary-foreground: 0.18 0.075 340;
+
+    /* Muted */
+    --muted: 0.28 0.065 340;
+    --muted-foreground: 0.72 0.04 75;
+
+    /* Accent: mauve-gold */
+    --accent: 0.35 0.07 340;
+    --accent-foreground: 0.93 0.025 85;
+
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    /* Borders */
+    --border: 0.38 0.055 355;
+    --input: 0.32 0.065 340;
+    --ring: 0.72 0.12 75;
+
+    /* Charts */
+    --chart-1: 0.72 0.12 75;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    /* Sidebar */
+    --sidebar: 0.18 0.075 340;
+    --sidebar-foreground: 0.93 0.025 85;
+    --sidebar-primary: 0.72 0.12 75;
+    --sidebar-primary-foreground: 0.18 0.075 340;
+    --sidebar-accent: 0.28 0.065 340;
+    --sidebar-accent-foreground: 0.93 0.025 85;
+    --sidebar-border: 0.38 0.055 355;
+    --sidebar-ring: 0.72 0.12 75;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-cinzel {
+    font-family: "Cinzel", serif;
+  }
+  .font-playfair {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  /* Gold gradient text */
+  .text-gold-gradient {
+    background: linear-gradient(
+      135deg,
+      oklch(0.82 0.13 78),
+      oklch(0.65 0.13 68)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Gold button gradient */
+  .bg-gold-gradient {
+    background: linear-gradient(
+      135deg,
+      oklch(0.78 0.13 78),
+      oklch(0.62 0.13 68)
+    );
+  }
+  .bg-gold-gradient:hover {
+    background: linear-gradient(
+      135deg,
+      oklch(0.82 0.14 80),
+      oklch(0.68 0.14 70)
+    );
+  }
+
+  /* Paisley pattern background */
+  .paisley-bg {
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd' opacity='0.07'%3E%3Cpath d='M60 10 C35 10, 15 30, 20 55 C25 80, 50 90, 60 85 C70 80, 80 65, 75 50 C70 35, 55 25, 60 10 Z' fill='%23C9A24A'/%3E%3Ccircle cx='60' cy='45' r='8' fill='%23C9A24A'/%3E%3Cpath d='M42 52 Q60 35 78 52' stroke='%23C9A24A' stroke-width='1.5' fill='none'/%3E%3Cpath d='M30 70 Q60 55 90 70' stroke='%23C9A24A' stroke-width='1' fill='none'/%3E%3Ccircle cx='30' cy='30' r='3' fill='%23C9A24A'/%3E%3Ccircle cx='90' cy='90' r='3' fill='%23C9A24A'/%3E%3Ccircle cx='90' cy='30' r='2' fill='%23C9A24A'/%3E%3Ccircle cx='30' cy='90' r='2' fill='%23C9A24A'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Mandala pattern background */
+  .mandala-bg {
+    background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.06' fill='none' stroke='%23C9A24A' stroke-width='1'%3E%3Ccircle cx='100' cy='100' r='80'/%3E%3Ccircle cx='100' cy='100' r='60'/%3E%3Ccircle cx='100' cy='100' r='40'/%3E%3Ccircle cx='100' cy='100' r='20'/%3E%3Cline x1='100' y1='20' x2='100' y2='180'/%3E%3Cline x1='20' y1='100' x2='180' y2='100'/%3E%3Cline x1='43' y1='43' x2='157' y2='157'/%3E%3Cline x1='157' y1='43' x2='43' y2='157'/%3E%3Cpath d='M100 20 L115 55 L100 40 L85 55 Z' fill='%23C9A24A'/%3E%3Cpath d='M100 180 L115 145 L100 160 L85 145 Z' fill='%23C9A24A'/%3E%3Cpath d='M20 100 L55 85 L40 100 L55 115 Z' fill='%23C9A24A'/%3E%3Cpath d='M180 100 L145 85 L160 100 L145 115 Z' fill='%23C9A24A'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .ivory-bg {
+    background-color: oklch(0.96 0.015 85);
+  }
+
+  /* Ornamental card border */
+  .royal-card {
+    border: 1px solid oklch(0.55 0.09 68);
+    position: relative;
+  }
+  .royal-card::before {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border: 1px solid oklch(0.45 0.06 68 / 0.4);
+    pointer-events: none;
+    z-index: 1;
+  }
+}
