@@ -196,7 +196,7 @@ function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? "shadow-[0_2px_30px_rgba(0,0,0,0.4)]" : ""
       }`}
-      style={{ backgroundColor: "#062830" }}
+      style={{ backgroundColor: "#2A0F1D" }}
     >
       <div
         className="h-0.5 w-full"
@@ -251,7 +251,7 @@ function Header() {
               className="flex items-center gap-2 px-4 py-2 font-cinzel text-sm tracking-widest transition-all duration-200 hover:shadow-gold"
               style={{
                 background: "linear-gradient(135deg, #D9B15A, #A67C2C)",
-                color: "#062830",
+                color: "#2A0F1D",
                 fontWeight: 700,
               }}
               data-ocid="nav.primary_button"
@@ -282,7 +282,7 @@ function Header() {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
             className="overflow-hidden lg:hidden border-t"
-            style={{ backgroundColor: "#062830", borderColor: "#0B4D62" }}
+            style={{ backgroundColor: "#2A0F1D", borderColor: "#521C3A" }}
           >
             <div className="px-6 py-4 flex flex-col gap-4">
               {navLinks.map((link) => (
@@ -290,7 +290,7 @@ function Header() {
                   key={link.label}
                   href={link.href}
                   className="font-cinzel text-sm tracking-widest py-2 border-b"
-                  style={{ color: "#F2E7D2", borderColor: "#0B4D62" }}
+                  style={{ color: "#F2E7D2", borderColor: "#521C3A" }}
                   onClick={() => setMobileOpen(false)}
                   data-ocid="nav.link"
                 >
@@ -306,7 +306,7 @@ function Header() {
         className="h-px w-full"
         style={{
           background:
-            "linear-gradient(90deg, transparent, #0B4D62, #A67C2C 30%, #0B4D62, transparent)",
+            "linear-gradient(90deg, transparent, #521C3A, #A67C2C 30%, #521C3A, transparent)",
         }}
       />
     </header>
@@ -336,7 +336,7 @@ function HeroSection() {
           <div
             className="absolute inset-y-0 right-0 w-24 pointer-events-none hidden lg:block"
             style={{
-              background: "linear-gradient(to right, transparent, #062830)",
+              background: "linear-gradient(to right, transparent, #2A0F1D)",
             }}
           />
           <div className="absolute inset-0 bg-black/30 lg:bg-transparent" />
@@ -344,7 +344,7 @@ function HeroSection() {
 
         <div
           className="relative lg:w-[45%] flex items-center justify-center overflow-hidden"
-          style={{ backgroundColor: "#062830", minHeight: "60vh" }}
+          style={{ backgroundColor: "#2A0F1D", minHeight: "60vh" }}
         >
           <PaisleyPattern opacity={0.09} />
 
@@ -420,7 +420,7 @@ function HeroSection() {
               className="inline-block font-cinzel font-bold text-sm tracking-[0.2em] px-10 py-4 transition-all duration-300 hover:scale-105"
               style={{
                 background: "linear-gradient(135deg, #D9B15A, #A67C2C)",
-                color: "#062830",
+                color: "#2A0F1D",
               }}
               data-ocid="hero.primary_button"
             >
@@ -539,7 +539,7 @@ function CraftsmanshipStrip() {
           </p>
           <h2
             className="font-cinzel font-bold text-3xl lg:text-4xl tracking-wider mb-2"
-            style={{ color: "#062830" }}
+            style={{ color: "#2A0F1D" }}
           >
             OUR CRAFTSMANSHIP
           </h2>
@@ -568,13 +568,13 @@ function CraftsmanshipStrip() {
               </div>
               <h3
                 className="font-cinzel font-semibold text-lg tracking-wider mb-3"
-                style={{ color: "#062830" }}
+                style={{ color: "#2A0F1D" }}
               >
                 {f.title}
               </h3>
               <p
                 className="font-playfair text-sm leading-relaxed"
-                style={{ color: "#073040" }}
+                style={{ color: "#4A2535" }}
               >
                 {f.desc}
               </p>
@@ -624,7 +624,7 @@ function ProductsSection() {
     <section
       id="products"
       className="relative py-24 overflow-hidden"
-      style={{ backgroundColor: "#062830" }}
+      style={{ backgroundColor: "#2A0F1D" }}
     >
       <PaisleyPattern opacity={0.06} />
 
@@ -659,7 +659,7 @@ function ProductsSection() {
             <motion.div
               key={product.id}
               className="royal-card group cursor-pointer overflow-hidden"
-              style={{ backgroundColor: "#0A3A48" }}
+              style={{ backgroundColor: "#3B1328" }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -723,7 +723,7 @@ function ProductsSection() {
                       (e.currentTarget as HTMLButtonElement).style.background =
                         "linear-gradient(135deg, #D9B15A, #A67C2C)";
                       (e.currentTarget as HTMLButtonElement).style.color =
-                        "#062830";
+                        "#2A0F1D";
                       (e.currentTarget as HTMLButtonElement).style.borderColor =
                         "#D9B15A";
                     }}
@@ -818,7 +818,7 @@ function ContactSection() {
         {/* Left: Customized Gifts */}
         <div
           className="relative lg:w-1/2 min-h-[60vh] flex items-center justify-center overflow-hidden"
-          style={{ backgroundColor: "#0A3A48" }}
+          style={{ backgroundColor: "#3B1328" }}
         >
           <div
             className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -892,7 +892,7 @@ function ContactSection() {
               className="inline-block font-cinzel font-bold text-sm tracking-[0.2em] px-10 py-4 transition-all duration-300"
               style={{
                 background: "linear-gradient(135deg, #D9B15A, #A67C2C)",
-                color: "#062830",
+                color: "#2A0F1D",
               }}
               data-ocid="gifts.primary_button"
             >
@@ -904,7 +904,7 @@ function ContactSection() {
         {/* Right: Contact form */}
         <div
           className="lg:w-1/2 py-20 px-10 lg:px-16 relative overflow-hidden"
-          style={{ backgroundColor: "#062830" }}
+          style={{ backgroundColor: "#2A0F1D" }}
         >
           <PaisleyPattern opacity={0.06} />
           <motion.div
@@ -946,7 +946,7 @@ function ContactSection() {
                   placeholder="Enter your name"
                   required
                   style={inputStyle}
-                  className="placeholder:text-[#1E6A7A]"
+                  className="placeholder:text-[#8B5A6A]"
                   data-ocid="contact.input"
                 />
               </div>
@@ -968,7 +968,7 @@ function ContactSection() {
                   placeholder="your@email.com"
                   required
                   style={inputStyle}
-                  className="placeholder:text-[#1E6A7A]"
+                  className="placeholder:text-[#8B5A6A]"
                   data-ocid="contact.input"
                 />
               </div>
@@ -990,7 +990,7 @@ function ContactSection() {
                   required
                   rows={4}
                   style={inputStyle}
-                  className="placeholder:text-[#1E6A7A] resize-none"
+                  className="placeholder:text-[#8B5A6A] resize-none"
                   data-ocid="contact.textarea"
                 />
               </div>
@@ -1000,7 +1000,7 @@ function ContactSection() {
                 className="w-full font-cinzel font-bold tracking-[0.2em] text-sm py-4 h-auto transition-all duration-300"
                 style={{
                   background: "linear-gradient(135deg, #D9B15A, #A67C2C)",
-                  color: "#062830",
+                  color: "#2A0F1D",
                   border: "none",
                 }}
                 data-ocid="contact.submit_button"
@@ -1054,7 +1054,7 @@ function ContactSection() {
                   placeholder="Your email address"
                   required
                   style={inputStyle}
-                  className="flex-1 placeholder:text-[#1E6A7A]"
+                  className="flex-1 placeholder:text-[#8B5A6A]"
                   data-ocid="newsletter.input"
                 />
                 <Button
@@ -1063,7 +1063,7 @@ function ContactSection() {
                   className="font-cinzel text-xs tracking-widest px-5 h-auto transition-all duration-200"
                   style={{
                     background: "linear-gradient(135deg, #D9B15A, #A67C2C)",
-                    color: "#062830",
+                    color: "#2A0F1D",
                     border: "none",
                   }}
                   data-ocid="newsletter.submit_button"
@@ -1102,7 +1102,7 @@ function Footer() {
   return (
     <footer
       className="relative overflow-hidden pt-16 pb-6"
-      style={{ backgroundColor: "#041C24" }}
+      style={{ backgroundColor: "#1E0A15" }}
     >
       <PaisleyPattern opacity={0.09} />
 
@@ -1259,7 +1259,7 @@ export default function App() {
       <Toaster
         toastOptions={{
           style: {
-            background: "#0A3A48",
+            background: "#3B1328",
             border: "1px solid #C9A24A",
             color: "#F2E7D2",
             fontFamily: "'Playfair Display', serif",
